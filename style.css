@@ -19,7 +19,12 @@ body {
   top: -50px;
 }
 
-.load {
+.load > .logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100px;
+  margin: auto;
 }
 
 .loading h2 {
@@ -28,3 +33,14 @@ body {
   text-align: center;
   transform: translateY(-20px);
 }
+
+.inf {
+  font-family: "Playfair Display", system-ui, -apple-system, sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  color: rgba(240, 248, 255, 0.308);
+  width: 80vh;
+  text-align: center;
+}
+
