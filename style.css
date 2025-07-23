@@ -1,7 +1,16 @@
 body {
   background-color: black;
-  
-  overflow: hidden; /* позже убрать */  
+}
+
+html,
+body {
+  overflow-x: hidden;
+  touch-action: pan-y;
+  user-select: none;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 #flag1 {
