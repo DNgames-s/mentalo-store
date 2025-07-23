@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentalo-store</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="loading" id="loading_display">
+    <div class="load">
+      <div class="logo">
+        <div id="flag1"></div>
+        <h2>mentalo.ru</h2>
+      </div>
+      <p class="inf"><i class="fas fa-thumbs-up"></i> Спасибо, что используете нас!</p>
+    </div>
+  </div>
+
+  <div class="main" id="main">
+    <div class="mn">
+      <h1>Mentalo-store</h1>
+      <div class="nav">
+        <a>каталог</a> <a>важно</a> <a>поддержка</a>
+      </div>
+      <div class="navs2">
+        <div class="nav2"><i class="fas fa-shop"></i></div>
+        <div class="nav2"><i class="fas fa-question"></i></div>
+        <div class="nav2"><i class="fas fa-info"></i></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+<script>
+  fetch('./animations/flag.json')
+    .then(res => res.json())
+    .then(data => {
+      lottie.loadAnimation({
+        container: document.getElementById('flag1'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        animationData: data
+      });
+    });
+
+  const loading = document.getElementById("loading_display");
+  const main = document.getElementById("main");
+
+  setTimeout(() => {
+    loading.classList.add("opt_loading");
+    setTimeout(() => {
+      loading.style.display = 'none';
+      main.style.display = 'block';
+      setTimeout(() => {
+        main.style.opacity = '1'
+      }, 500);
+    }, 1200);
+  }, 3000);
+
+
+</script>
+
+</html>
