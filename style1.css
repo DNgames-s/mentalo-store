@@ -325,6 +325,7 @@ html,
 
   .prm p {
     bottom: 20px;
+    width: 180px;
   }
 
   .prm_txt {
