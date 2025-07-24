@@ -81,6 +81,8 @@ html,
   right: 50%;
   min-width: 450px;
   max-width: 1200px;
+  z-index: 99999999999;
+  backdrop-filter: blur(10px);
 }
 
 .mn h1 {
@@ -143,12 +145,34 @@ html,
   margin-right: 10px;
 }
 
+.rainbow-text {
+  background: linear-gradient(90deg, blue, aqua);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 15s ease infinite;
+  font-size: 50px;
+  font-weight: bold;
+}
 
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-
-
-
-
+.t_inf {
+  position: relative;
+  z-index: 1;
+  color: aliceblue;
+  font-size: 50px;
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 200px;
+}
 
 
 
@@ -159,9 +183,18 @@ html,
   .nav {
     display: none;
   }
+
+  .t_inf, .rainbow-text {
+    font-size: 40px;
+  }
+
+  .t_inf {
+    width: 80%;
+    min-width: 400px;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 490px) {
   .mn {
     min-width: 300px;
     top: 15px;
@@ -177,5 +210,15 @@ html,
     width: 30px;
     height: 30px;
     font-size: 12px;
+  }
+
+  .t_inf, .rainbow-text {
+    font-size: 30px;
+  }
+
+  .t_inf {
+    top: 100px;
+    width: 80%;
+    min-width: 300px;
   }
 }
