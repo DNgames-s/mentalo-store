@@ -191,7 +191,7 @@ html,
   flex-grow: 1;
   gap: 15px;
   position: relative;
-  top: 300px;
+  top: 240px;
   max-width: 1320px;
 }
 
@@ -249,53 +249,12 @@ html,
 .prms_n {
   color: rgba(255, 255, 255, 0.267);
   position: relative;
-  top: 300px;
+  top: 240px;
   display: flex;
   justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1130px) {
   .nav {
@@ -346,5 +305,34 @@ html,
 
   .prms {
     width: 90%;
+    top: 130px;
+  }
+
+  .prm {
+    width: 350px;
+    height: 170px;
+  }
+
+  .prm i {
+    font-size: 40px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .prm h1 {
+    font-size: 30px;
+  }
+
+  .prm p {
+    bottom: 20px;
+  }
+
+  .prm_txt {
+    left: 15px;
+  }
+
+  .prms_n {
+    font-size: 25px;
+    top: 130px;
   }
 }
