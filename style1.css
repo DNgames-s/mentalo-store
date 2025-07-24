@@ -148,6 +148,13 @@ html,
 
 
 
+
+
+
+
+
+
+
 @media (max-width: 1130px) {
   .nav {
     display: none;
@@ -157,7 +164,7 @@ html,
 @media (max-width: 450px) {
   .mn {
     min-width: 300px;
-    top: 10px;
+    top: 15px;
   }
 
   .mn h1 {
