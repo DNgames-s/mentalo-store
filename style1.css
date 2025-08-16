@@ -211,9 +211,9 @@ html,
 }
 
 .prm {
-  width: 550px;
-  height: 230px;
-  background-color: rgb(28, 28, 37);
+  width: 540px;
+  height: 190px;
+  background-color: rgb(21, 21, 31);
   border: 0;
   border-radius: 20px;
   display: flex;
@@ -270,6 +270,20 @@ html,
   font-family: "IBM Plex Mono", monospace;
   font-weight: 300;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1130px) {
   .nav {
